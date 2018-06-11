@@ -253,11 +253,98 @@
 /* Other Features- futures */
 .futures {
   padding-top: 92px;
-  padding-bottom: 92px;
 }
 
 .futures__title {
   padding-bottom: 109px;
+}
+
+.futures__tabs-header {
+  display: flex;
+  margin-bottom: 60px;
+  border-bottom: 1px solid #a1a1a1;
+}
+
+.futures__tabs-link {
+  position: relative;
+  width: calc(100% / 3);
+  height: 40px;
+  color: #646466;
+  font-size: 20px;
+  font-family: "proxima_novaextrabold", Arial, sans-serif;
+  transition: color 0.3s ease-in-out;
+}
+.futures__tabs-link:nth-child(2),
+.futures__tabs-link:nth-child(3) {
+  text-align: center;
+}
+.futures__tabs-link.is-active {
+  color: #000;
+}
+.futures__tabs-link:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+.futures__tabs-link.is-active:after {
+  background-color: #f0cc02;
+  transition: background-color 0.3s ease-in-out;
+}
+.futures__tabs-link:hover,
+.futures__tabs-link:focus {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.futures__tabs-body {
+  display: none;
+}
+.futures__tabs-body.is-active {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.futures__tabs-block {
+  width: calc(100% / 3);
+  margin-bottom: 92px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+
+.futures__tabs-circle  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 91px;
+  height: 91px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 22px;
+  border-radius: 100%;
+  border: 1px solid #a1a1a1;
+}
+
+.futures__tabs-image  {
+  display: block;
+  max-width: 100%;
+}
+
+.futures__tabs-title {
+  color: #1b51a9;
+  font-size: 24px;
+  font-family: "proxima_novabold", Arial, sans-serif;
+}
+
+.futures__tabs-text {
+  font-size: 16px;
 }
 /* end Other Features- futures */
 
