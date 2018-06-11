@@ -30,8 +30,17 @@
   margin: 0;
   color: #000;
   text-align: center;
-  font-size: 48px;
   font-family: "proxima_novaextrabold", Arial, sans-serif;
+}
+@media screen and (min-width: 320px) {
+  .title {
+    font-size: 35px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 48px;
+  }
 }
 /* end main */
 
@@ -251,12 +260,26 @@
 
 
 /* Other Features- futures */
-.futures {
-  padding-top: 92px;
+@media screen and (min-width: 320px) {
+  .futures {
+    padding-top: 45px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .futures {
+    padding-top: 92px;
+  }
 }
 
-.futures__title {
-  padding-bottom: 109px;
+@media screen and (min-width: 320px) {
+  .futures__title {
+    padding-bottom: 55px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .futures__title {
+    padding-bottom: 109px;
+  }
 }
 
 .futures__tabs-header {
@@ -270,14 +293,31 @@
   width: calc(100% / 3);
   height: 40px;
   color: #646466;
-  font-size: 20px;
+  text-align: center;
   font-family: "proxima_novaextrabold", Arial, sans-serif;
   transition: color 0.3s ease-in-out;
 }
-.futures__tabs-link:nth-child(2),
-.futures__tabs-link:nth-child(3) {
-  text-align: center;
+@media screen and (min-width: 320px) {
+  .futures__tabs-link {
+    font-size: 13px;
+  }
 }
+@media screen and (min-width: 576px) {
+  .futures__tabs-link {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .futures__tabs-link {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .futures__tabs-link {
+    font-size: 20px;
+  }
+}
+
 .futures__tabs-link.is-active {
   color: #000;
 }
@@ -312,11 +352,26 @@
 }
 
 .futures__tabs-block {
-  width: calc(100% / 3);
-  margin-bottom: 92px;
-  padding-left: 50px;
-  padding-right: 50px;
   text-align: center;
+}
+@media screen and (min-width: 320px) {
+  .futures__tabs-block {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .futures__tabs-block {
+    width: calc(100% / 2);
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 92px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .futures__tabs-block {
+    width: calc(100% / 3);
+  }
 }
 
 .futures__tabs-circle  {
@@ -341,6 +396,16 @@
   color: #1b51a9;
   font-size: 24px;
   font-family: "proxima_novabold", Arial, sans-serif;
+}
+@media screen and (min-width: 320px) {
+  .futures__tabs-title {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .futures__tabs-title {
+    font-size: 24px;
+  }
 }
 
 .futures__tabs-text {
