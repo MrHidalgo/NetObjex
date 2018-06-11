@@ -54,10 +54,10 @@
 
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#what_is_lookfit" class="smoothScroll"><i>what</i><span>problems we solve</span></a></li>
-            <li><a href="#what_is_lookfit" class="smoothScroll"><i>why</i><span>choose netobjex</span></a></li>
-            <li><a href="#what_is_lookfit" class="smoothScroll"><i>who</i><span>uses netobjex</span></a></li>
-            <li><a href="#what_is_lookfit" class="smoothScroll"><i>how</i><span>does it work</span></a></li>
+            <li><a href="#problems" class="smoothScroll"><i>what</i><span>problems we solve</span></a></li>
+            <li><a href="#why_choose" class="smoothScroll"><i>why</i><span>choose netobjex</span></a></li>
+            <li><a href="#user_stories" class="smoothScroll"><i>who</i><span>uses netobjex</span></a></li>
+            <li><a href="#how_works" class="smoothScroll"><i>how</i><span>does it work</span></a></li>
             <li><a href="#requestdemo" class="smoothScroll"><i>when</i><span>can I try netobjex</span></a></li>
 
           </ul>
@@ -84,7 +84,7 @@
             <div class="banner_numberbox last"><span class="num">5</span><span class="detail">sectors <br><sub>use our technology</sub></span></div>
           </div>
 
-          <a href="javascript:void(0)" class="base_btn demo_btn wow bounceInLeft" data-wow-delay="1.6s">REQUEST A DEMO</a>
+          <a href="#requestdemo" class="base_btn demo_btn wow bounceInLeft smoothScroll" data-wow-delay="1.6s">REQUEST A DEMO</a>
           <a href="javascript:void(0)" class="base_btn learn_btn wow bounceInLeft" data-wow-delay="1.6s">learn more</a>
         </div>
 
@@ -442,10 +442,89 @@
     <div id="demo">
       <div id="requestdemo">
         <span class="pen"></span>
+        <div class="text-center asktext"><img src="images/demo_text.jpg"></div>
+        <div class="demo_form">
+          <div class="full">
+            <div class="half"><input type="text" name="" placeholder="FULL NAME:"></div>
+            <div class="half"><input type="text" name="" placeholder="EMAIL:"></div>
+          </div>
+          <div class="full">
+            <div class="half"><input type="text" name="" placeholder="COMPANY:"></div>
+            <div class="half"><input type="text" name="" placeholder="PHONE #:"></div>
+          </div>
+          <div class="text-center asktext"><a href="#" class="demo_formbtn">REQUEST A DEMO</a></div>
+
+        </div>
       </div>
 
     </div>
   </section>
+  <footer id="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 col-sm-4">
+          <a href="#"><img src="images/logo.png"></a>
+
+          <ul class="social_links">
+            <li><a href="#" target="_blank" class="sm_fb"></a></li>
+            <li><a href="#" target="_blank" class="sm_tweet"></a></li>
+            <li><a href="#" target="_blank" class="sm_gplus"></a></li>
+            <li><a href="#" target="_blank" class="sm_lin"></a></li>
+            <li><a href="#" target="_blank" class="sm_tube"></a></li>
+            <li><a href="#" target="_blank" class="sm_med"></a></li>
+            <li><a href="#" target="_blank" class="sm_slack"></a></li>
+            <li><a href="#" target="_blank" class="sm_kyte"></a></li>
+          </ul>
+          <p class="foot_detail msg">sales@netobjex.com</p>
+          <p class="foot_detail phone">(855) 928-2283</p>
+          <p class="foot_detail chat">Let's chat ...pick a slot on our calendar at: <a href="#"> calendly.com/netobjex</a></p>
+        </div>
+        <div class="col-md-8 col-sm-8">
+          <div class="col-md-3 col-sm-6">
+            <div class="foot_title"><i>who</i> <span class="sub">uses netobjex</span></div>
+            <ul class="f_links">
+              <li><a href="#">User Stories</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Uses Cases</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="foot_title"><i>how</i> <span class="sub">does it wor</span></div>
+            <ul class="f_links">
+              <li><a href="#">Web Tour</a></li>
+              <li><a href="#">Video Tour</a></li>
+              <li><a href="#">Technology</a></li>
+              <li><a href="#">IoToken</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="foot_title"><i>who</i> <span class="sub">uses netobjex</span></div>
+            <ul class="f_links">
+              <li><a href="#">Artificial Intelligence</a></li>
+              <li><a href="#">BlockChain</a></li>
+              <li><a href="#">Internet of Things</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="foot_title"><i>about</i> <span class="sub">netobjex</span></div>
+            <ul class="f_links">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Developers</a></li>
+              <li><a href="#">Press Releases</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-12 bdr_top">
+            <span class="copy">copyright @ 2018 netObjex.com All rights reserved.</span>
+            <span class="privacy"><a href=""> Privacy</a>     |    <a href=""> Terms of Service</a></span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
 </div>
 
 
@@ -496,63 +575,5 @@
 </div>
 
 
-<script type="text/javascript">
-  $(document).on('ready', function () {
-    $(".vertical-center-4").slick({
-      dots: true,
-      vertical: true,
-      centerMode: true,
-      slidesToShow: 4,
-      slidesToScroll: 2
-    });
-    $(".vertical-center-3").slick({
-      dots: true,
-      vertical: true,
-      centerMode: true,
-      slidesToShow: 3,
-      slidesToScroll: 3
-    });
-    $(".vertical-center-2").slick({
-      dots: true,
-      vertical: true,
-      centerMode: true,
-      slidesToShow: 2,
-      slidesToScroll: 2
-    });
-    $(".vertical-center").slick({
-      dots: true,
-      vertical: true,
-      centerMode: true,
-    });
-    $(".vertical").slick({
-      dots: true,
-      vertical: true,
-      slidesToShow: 3,
-      slidesToScroll: 3
-    });
-    $(".regular").slick({
-      dots: true,
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 3
-    });
-    $(".center").slick({
-      dots: true,
-      infinite: true,
-      centerMode: true,
-      slidesToShow: 5,
-      slidesToScroll: 3
-    });
-    $(".variable").slick({
-      dots: true,
-      infinite: true,
-      variableWidth: true
-    });
-    $(".lazy").slick({
-      lazyLoad: 'ondemand', // ondemand progressive anticipated
-      infinite: true
-    });
-  });
-</script>
 </body>
 </html>
