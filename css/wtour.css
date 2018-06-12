@@ -47,6 +47,16 @@
   right: -15px;
   bottom: -20px;
 }
+@media screen and (min-width: 320px) {
+  .wtour .main__bg.main__bg-2 {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .wtour .main__bg.main__bg-2 {
+    display: block;
+  }
+}
 .wtour .c-grid {
   z-index: 1;
   position: relative;
@@ -98,21 +108,60 @@
 .wtour .main__box {
   display: flex;
   justify-content: space-between;
-  height: 538px;
+
   width: 100%;
   max-width: 1147px;
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 320px) {
+  .wtour .main__box {
+    flex-direction: column;
+    height: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .wtour .main__box {
+    flex-direction: row;
+    height: 538px;
+  }
+}
 .wtour .main__box-left {
-  width: 283px;
   border-radius: 2px;
   border: 1px solid #00aeef;
   background-color: #fff;
 }
+@media screen and (min-width: 320px) {
+  .wtour .main__box-left {
+    overflow: auto;
+    height: 145px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .wtour .main__box-left {
+    width: 250px;
+    height: 100%;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .wtour .main__box-left {
+    width: 283px;
+  }
+}
 .wtour .main__box-right {
   position: relative;
-  width: calc(100% - (283px + 43px));
+}
+@media screen and (min-width: 768px) {
+  .wtour .main__box-right {
+    width: calc(100% - (250px + 30px));
+  }
+}
+@media screen and (min-width: 992px) {
+  .wtour .main__box-right {
+    width: calc(100% - (283px + 43px));
+  }
 }
 .wtour .main__box-img {
   display: block;
@@ -124,12 +173,22 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  height: calc(100% / 10);
   border-bottom: 1px solid #00aeef;
   text-transform: uppercase;
   padding-left: 35px;
+  padding-right: 30px;
   font-family: "proxima_novasemibold", Arial, sans-serif;
   transition: background-color 0.3s ease-in-out;
+}
+@media screen and (min-width: 320px) {
+  .wtour .main__block {
+    height: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .wtour .main__block {
+    height: calc(100% / 10);
+  }
 }
 .wtour .main__block:last-child {
   border-bottom:none;
