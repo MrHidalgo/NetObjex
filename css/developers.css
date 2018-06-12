@@ -20,18 +20,35 @@
 
 
 /* request */
-.request {}
-.request__tabs {}
 .request__tabs p {
   margin-bottom: 0;
 }
 .request__tabs--wrap {
   margin-top: 85px;
   margin-bottom: 104px;
-  padding: 84px 101px;
   border-radius: 2px;
   background-color: #fff;
   box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.12);
+}
+@media screen and (min-width: 320px) {
+  .request__tabs--wrap {
+    padding: 15px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .request__tabs--wrap {
+    padding: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .request__tabs--wrap {
+    padding: 50px 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .request__tabs--wrap {
+    padding: 84px 101px;
+  }
 }
 .request__tabs-header {
   display: flex;
@@ -39,7 +56,7 @@
 }
 .request__tabs-link {
   position: relative;
-  width: calc(100% / 3);
+  width: calc(100% / 4);
   height: 40px;
   color: #646466;
   text-align: center;
@@ -53,12 +70,12 @@
 }
 @media screen and (min-width: 576px) {
   .request__tabs-link {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 768px) {
   .request__tabs-link {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -94,9 +111,6 @@
 }
 .request__tabs-body.is-active {
   display: block;
-  /*display: flex;*/
-  /*flex-wrap: wrap;*/
-  /*justify-content: center;*/
 }
 .request__tabs-subtitle {
   line-height: 1;
@@ -104,17 +118,41 @@
   font-family: "proxima_novasemibold", Arial, sans-serif;
 }
 .request__tabs-title {
-  padding-bottom: 78px;
   color: #0155bb;
-  font-size: 36px;
   font-family: "proxima_novaextrabold", Arial, sans-serif;
+}
+@media screen and (min-width: 320px) {
+  .request__tabs-title {
+    padding-bottom: 35px;
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .request__tabs-title {
+    padding-bottom: 78px;
+    font-size: 36px;
+  }
 }
 .request__tabs-row {
   display: flex;
 }
-.request__tabs-left,
-.request__tabs-right {
-  width: 50%;
+@media screen and (min-width: 320px) {
+  .request__tabs-row {
+    flex-direction: column;
+  }
+  .request__tabs-left,
+  .request__tabs-right {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .request__tabs-row {
+    flex-direction: row;
+  }
+  .request__tabs-left,
+  .request__tabs-right {
+    width: 50%;
+  }
 }
 /* end request */
 
