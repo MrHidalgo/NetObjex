@@ -12,12 +12,18 @@ $(function () {
     $("[data-tabs-body='" + elemNum + "']").addClass("fadeIn is-active");
   });
 
-  $("[vblock-js]").on("click", function(e) {
-    e.preventDefault();
+  function tourBtn(btnName) {
+    $("[" + btnName + "]").on("click", function(e) {
+      e.preventDefault();
 
-    var elem = $(this);
+      var elem = $(this);
 
-    $("[vblock-js]").removeClass("is-active");
-    elem.addClass("is-active");
-  });
+      $("[" + btnName + "]").removeClass("is-active");
+      elem.addClass("is-active");
+    });
+  }
+
+  tourBtn("vblock-js");
+  tourBtn("wblock-js");
+
 });
