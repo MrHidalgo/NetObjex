@@ -11,4 +11,13 @@ $(function () {
     $("[tabs-body-js]").removeClass("fadeOut is-active");
     $("[data-tabs-body='" + elemNum + "']").addClass("fadeIn is-active");
   });
+
+  $("[vblock-js]").on("click", function(e) {
+    e.preventDefault();
+
+    var elem = $(this);
+
+    $("[vblock-js]").removeClass("is-active");
+    elem.addClass("is-active");
+  });
 });
