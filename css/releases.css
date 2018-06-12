@@ -8,48 +8,140 @@
 .releases .main {
   padding-bottom: 95px;
 }
-.releases .main__title {
-  padding-top: 112px;
-  padding-bottom: 81px;
-  text-align: left;
-  font-size: 60px;
+@media screen and (min-width: 320px) {
+  .releases .main {
+    padding-bottom: 45px;
+  }
 }
+@media screen and (min-width: 768px) {
+  .releases .main {
+    padding-bottom: 95px;
+  }
+}
+
+.releases .main__title {
+  text-align: left;
+}
+@media screen and (min-width: 320px) {
+  .releases .main__title {
+    padding-top: 55px;
+    padding-bottom: 40px;
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .releases .main__title {
+    font-size: 45px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .releases .main__title {
+    padding-top: 112px;
+    padding-bottom: 81px;
+    font-size: 60px;
+  }
+}
+
 .releases .main__banner {
   position: relative;
   height: 316px;
   margin-bottom: 60px;
-  padding-right: 540px;
-  padding-top: 64px;
-  padding-left: calc(50px + 76px);
-  background-color: #000000;
-  background-image: url("../images/img-banner__releases.png");
+  background-color: #000;
   background-position: top right;
   background-repeat: no-repeat;
-  color: #ffffff;
+  color: #fff;
+}
+@media screen and (min-width: 320px) {
+  .releases .main__banner {
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: calc(15px + 46px);
+  }
+}
+@media screen and (min-width: 768px) {
+  .releases .main__banner {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: calc(50px + 76px);
+  }
+}
+@media screen and (min-width: 992px) {
+  .releases .main__banner {
+    padding-right: 540px;
+    background-image: url("../images/img-banner__releases.png");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .releases .main__banner {
+    padding-top: 64px;
+  }
 }
 .releases .main__banner-badge {
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 64px;
   left: 0;
-  width: 76px;
-  height: 56px;
   background-color: #f0cc02;
-  font-size: 18px;
   font-family: "proxima_novabold", Arial, sans-serif;
 }
+@media screen and (min-width: 320px) {
+  .releases .main__banner-badge {
+    top: 15px;
+    width: 46px;
+    height: 36px;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .releases .main__banner-badge {
+    top: 64px;
+    width: 76px;
+    height: 56px;
+    font-size: 18px;
+  }
+}
+
 .releases .main__banner-title {
   margin-bottom: 0;
   padding-bottom: 15px;
-  font-size: 24px;
   font-family: "proxima_novabold", Arial, sans-serif;
 }
+@media screen and (min-width: 320px) {
+  .releases .main__banner-title {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .releases .main__banner-title {
+    font-size: 24px;
+  }
+}
+
 .releases .main__banner-subtitle {
   margin-bottom: 0;
-  padding-bottom: 80px;
-  font-size: 18px;
+}
+@media screen and (min-width: 320px) {
+  .releases .main__banner-subtitle {
+    padding-bottom: 30px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .releases .main__banner-subtitle {
+    padding-bottom: 60px;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .releases .main__banner-subtitle {
+    padding-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .releases .main__banner-subtitle {
+    padding-bottom: 80px;
+  }
 }
 .releases .main__banner-date {
   margin-bottom: 0;
@@ -58,15 +150,55 @@
 }
 .releases .main__row {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: space-between;
 }
+@media screen and (min-width: 320px) {
+  .releases .main__row {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .releases .main__row {
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .releases .main__row {
+    justify-content: space-between;
+  }
+}
+
 .releases .main__block {
   width: 306px;
   padding: 10px;
   background-color: #fff;
   box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.12);
 }
+@media screen and (min-width: 320px) {
+  .releases .main__block {
+    margin-bottom: 30px;
+  }
+  .releases .main__block:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .releases .main__block {
+    margin-bottom: 30px;
+  }
+  .releases .main__block:nth-child(3),
+  .releases .main__block:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .releases .main__block {
+    width: 286px;
+    margin-bottom: 0;
+  }
+}
+
 .releases .main__block-wrapper {
   overflow: hidden;
   height: 163px;
