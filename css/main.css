@@ -35,6 +35,7 @@
 .developers.body__white {
   background-color: #fff;
 }
+
 .technology .main,
 .releases .main,
 .vtour .main,
@@ -387,7 +388,6 @@
   font-size: 18px;
   font-family: "proxima_novabold", Arial, sans-serif;
 }
-.lInfo .lInfo__header-0 {}
 /*
   end MAIN
   ============ */
