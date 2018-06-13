@@ -8,6 +8,8 @@
   .releases,
   .vtour,
   .wtour,
+  .terms,
+  .privacy,
   .developers {
     margin-top: 80px;
   }
@@ -17,6 +19,8 @@
   .releases,
   .vtour,
   .wtour,
+  .terms,
+  .privacy,
   .developers {
     margin-top: 92px;
   }
@@ -26,6 +30,8 @@
 .releases.body__white,
 .vtour.body__white,
 .wtour.body__white,
+.terms.body__white,
+.privacy.body__white,
 .developers.body__white {
   background-color: #fff;
 }
@@ -33,11 +39,15 @@
 .technology .page_wrap,
 .releases .page_wrap,
 .vtour .page_wrap,
+.terms .page_wrap,
+.privacy .page_wrap,
 .wtour .page_wrap,
 .developers .page_wrap,
 .technology .page_wrap .header_inner,
 .releases .page_wrap .header_inner,
 .vtour .page_wrap .header_inner,
+.terms .page_wrap .header_inner,
+.privacy .page_wrap .header_inner,
 .wtour .page_wrap .header_inner,
 .developers .page_wrap .header_inner
 {
@@ -47,6 +57,8 @@
 .technology footer .container-fluid,
 .releases footer .container-fluid,
 .vtour footer .container-fluid,
+.terms footer .container-fluid,
+.privacy footer .container-fluid,
 .wtour footer .container-fluid,
 .developers footer .container-fluid
 {
@@ -304,6 +316,8 @@
   color: #0155bb;
   text-decoration: underline;
 }
+
+
 /*
   end MAIN
   ============ */
