@@ -22,16 +22,22 @@ $(function () {
       elem.addClass("is-active");
 
       if(btnName === "vblock-js") {
-        var elemIdx = elem.attr("data-block"),
+        var elemVideoIdx = elem.attr("data-block"),
           elemTitle = elem.find(".main__block-text").text();
 
         var textInsertBlock = $(".main__box-bottom .main__box-title");
         textInsertBlock.html(elemTitle);
 
         $(".main__box-wrapper").removeClass("is-active");
-        $(".main__box-wrapper[data-wrap='" + elemIdx + "']").addClass("is-active");
+        $(".main__box-wrapper[data-wrap='" + elemVideoIdx + "']").addClass("is-active");
       }
-      if(btnName === "wblock-js") {}
+
+      if(btnName === "wblock-js") {
+        var elemWebIdx = elem.attr("data-block");
+
+        $(".main__box-wrapper").removeClass("is-active");
+        $(".main__box-wrapper[data-wrap='" + elemWebIdx + "']").addClass("is-active");
+      }
     });
   }
 
