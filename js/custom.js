@@ -43,6 +43,13 @@ jQuery(document).ready(function($){
                 slidesToShow: 1,
                 slidesToScroll: 1
                                 }
+      },
+      {
+                breakpoint: 1000,
+                settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+                                }
       }
       ],
       });
@@ -52,6 +59,18 @@ jQuery(document).ready(function($){
         slidesToShow: 1,
         slidesToScroll: 1
       });
+
+    $('.user_slide').click(function(){
+      if ( ! $(this).hasClass('active')){
+            $('.user_slide').removeClass('active');
+            //$('.user_slide').fadeOut(100);
+            $('.user_slide').hide();
+            var mySlide = $(this).addClass('active').detach();
+            mySlide.prependTo('.slider_wrap');
+            $('.user_slide').fadeIn(100);
+      }
+      
+    });
 
     $('[data-toggle="tooltip"]').tooltip(); 
 
