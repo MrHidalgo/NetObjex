@@ -203,7 +203,31 @@
   height: auto;
 }
 .vtour .main__box-top {
-  margin-bottom: 30px;
+  position: relative;
+  height: 447px;
+}
+.main__box-wrapper {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.main__box-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.main__box-wrapper.is-active {
+  display: block;
+  animation-name: fadeIn;
+}
+.main__box-bottom {
+  padding-top: 30px;
+  height: calc(100% - 447px);
 }
 .vtour .main__box-title {
   color: #ffffff;

@@ -20,6 +20,18 @@ $(function () {
 
       $("[" + btnName + "]").removeClass("is-active");
       elem.addClass("is-active");
+
+      if(btnName === "vblock-js") {
+        var elemIdx = elem.attr("data-block"),
+          elemTitle = elem.find(".main__block-text").text();
+
+        var textInsertBlock = $(".main__box-bottom .main__box-title");
+        textInsertBlock.html(elemTitle);
+
+        $(".main__box-wrapper").removeClass("is-active");
+        $(".main__box-wrapper[data-wrap='" + elemIdx + "']").addClass("is-active");
+      }
+      if(btnName === "wblock-js") {}
     });
   }
 
