@@ -2617,6 +2617,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .news__btn {
     width: 211px;
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 992px) {
