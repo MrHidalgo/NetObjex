@@ -25,5 +25,4 @@ $(function () {
 
   tourBtn("vblock-js");
   tourBtn("wblock-js");
-
 });

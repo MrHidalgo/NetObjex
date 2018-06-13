@@ -22,12 +22,12 @@
   }
 }
 
-.technology.body__transparent,
-.releases.body__transparent,
-.vtour.body__transparent,
-.wtour.body__transparent,
-.developers.body__transparent {
-  background-color: transparent;
+.technology.body__white,
+.releases.body__white,
+.vtour.body__white,
+.wtour.body__white,
+.developers.body__white {
+  background-color: #fff;
 }
 
 .technology .page_wrap,
