@@ -43,4 +43,39 @@ $(function () {
 
   tourBtn("vblock-js");
   tourBtn("wblock-js");
+
+  var slickPrevArrow = '<div class="prev"></div>';
+  var slickNextArrow = '<div class="next"></div>';
+
+  $('.news__slider').not('.slick-initialized').slick({
+    prevArrow: slickPrevArrow,
+    nextArrow: slickNextArrow,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1366,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
 });
