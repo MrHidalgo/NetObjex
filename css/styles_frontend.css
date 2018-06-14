@@ -2016,6 +2016,51 @@ footer .bdr_top {
 input::placeholder {
   color: #000;
 }
+#tokenblock
+{
+  background: #1d2491;
+  width: 100%;
+  float: left;
+}
+#tokenblock .testi_inner
+{
+  background: url(../images/iot_icon.png) no-repeat center right;
+    min-height: 390px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+#tokenblock h1.site_title
+{
+  color: #fff;
+  padding-bottom: 0;
+  margin-bottom: 0px;
+      float: left;
+    width: 100%;
+  position: relative;
+}
+#tokenblock h1.site_title span
+{
+  float: left;
+}
+#tokenblock h1.site_title i
+{
+  width: 40px;
+  height: 10px;
+  background: #ffcc00;
+  display: inline-block;
+      float: left;
+    margin-top: 34px;
+    margin-left: 20px;
+
+}
+#tokenblock p
+{
+  color: #fff;
+  font-size: 24px;
+  font-family: 'proxima_novabold';
+  padding-bottom: 30px;
+  padding-right: 400px;
+}
 
 @media ( max-width: 767px) {
   h1.site_title,
@@ -2028,7 +2073,34 @@ input::placeholder {
     background: #111;
     margin-top: 19px;
   }
-
+  #tokenblock .testi_inner
+  {
+    background: none;
+    padding: 0px 20px;
+    min-height: auto;
+  }
+  #tokenblock h1.site_title
+  {
+    margin-top: 55px;
+  }
+  #tokenblock h1.site_title i
+  {
+    width: 36px;
+    height: 8px;
+        margin-top: 22px;
+    margin-left: 20px;
+  }
+  #tokenblock  .readmore_btn
+  {
+        margin-bottom: 55px;
+  }
+  #tokenblock p
+  {
+    font-size: 16px;
+    font-family: 'proxima_novabold';
+    padding-bottom: 30px;
+    padding-right: 0px;
+  }
   #user_stories {
     padding-top: 50px;
   }
@@ -2451,6 +2523,7 @@ input::placeholder {
     margin-left: 15px;
     margin-right: 15px;
   }
+
 }
 
 @media screen and ( min-width: 1001px )  and ( max-width: 1200px ) {
@@ -2475,6 +2548,10 @@ input::placeholder {
     margin-left: 15px;
     margin-right: 15px;
   }
+  .testi_inner
+   {
+    padding-left: 15px; padding-right: 15px;
+   }
 }
 
 @media screen and ( min-width: 768px )  and ( max-width: 1200px ) {
@@ -2528,6 +2605,10 @@ input::placeholder {
     width: 250px;
     margin: 0 auto;
   }
+  .testi_inner
+   {
+    padding-left: 15px; padding-right: 15px;
+   }
 
 }
 
