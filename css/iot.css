@@ -1,0 +1,181 @@
+/*
+  DEVELOPERS
+  ============
+  ============ */
+
+
+/* main */
+.iot .main {}
+.iot .main {}
+/* end main */
+
+
+/* core */
+.core {}
+.core {}
+/* end core */
+
+
+/* cases */
+.cases {}
+.cases {}
+/* end cases */
+
+
+/* protocols */
+.protocols {
+  padding-top: 104px;
+  padding-bottom: 60px;
+  background-color: #000000;
+}
+@media screen and (max-width: 767px) {
+  .protocols {
+    padding-top: 52px;
+    padding-bottom: 30px;
+  }
+}
+
+.protocols__title {
+  padding-bottom: 85px;
+  color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .protocols__title {
+    padding-bottom: 40px;
+  }
+}
+
+.protocols__row {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .protocols__row {
+    flex-direction: column;
+  }
+}
+
+.protocols__block {
+  width: 50%;
+  padding-left: 56px;
+}
+@media screen and (max-width: 767px) {
+  .protocols__block {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .protocols__block {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .protocols__block {
+    padding-left: 56px;
+  }
+}
+
+.protocols__block p {
+  margin: 0;
+  color: #fff;
+}
+.protocols__block-title {
+  color: #fff;
+  font-size: 24px;
+  font-family: "proxima_novaextrabold", Arial, sans-serif;
+}
+.protocols__block-line {
+  width: 49px;
+  height: 4px;
+  margin: 30px 0 35px;
+  border: none;
+  background-color: #f0cc02;
+}
+.protocols__block-text {
+  font-size: 16px;
+}
+.protocols__block-text--p {
+  padding-bottom: 45px;
+}
+.protocols__block-list {
+  padding: 0;
+  margin: 0;
+}
+.protocols__block-item {
+  display: flex;
+  padding-bottom: 30px;
+  font-size: 16px;
+}
+.protocols__block-left {
+  width: 185px;
+}
+@media screen and (max-width: 767px) {
+  .protocols__block-left {
+    width: 145px;
+  }
+}
+.protocols__block-left p {
+  font-family: "proxima_novabold", Arial, sans-serif;
+}
+.protocols__block-right {
+  width: calc(100% - 185px);
+}
+@media screen and (max-width: 767px) {
+  .protocols__block-right {
+    width: calc(100% - 145px);
+  }
+}
+.protocols {}
+/* end protocols */
+
+
+/* started */
+.started {
+  background-color: #f0cc02;
+}
+@media screen and (min-width: 320px) {
+  .started {
+    padding-top: 47px;
+    padding-bottom: 34px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .started {
+    padding-top: 94px;
+    padding-bottom: 69px;
+  }
+}
+
+.started__title {
+  padding-bottom: 51px;
+  font-size: 36px;
+}
+@media screen and (max-width: 767px) {
+  .started__title {
+    padding-bottom: 25px;
+    font-size: 30px;
+  }
+}
+
+.started__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 184px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #000;
+  background-color: transparent;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* end started */
+
+
+/*
+  end DEVELOPERS
+  ============ */

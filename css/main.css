@@ -9,6 +9,7 @@
   .vtour,
   .wtour,
   .term,
+  .iot,
   .privacy,
   .developers {
     margin-top: 80px;
@@ -20,6 +21,7 @@
   .vtour,
   .wtour,
   .term,
+  .iot,
   .privacy,
   .developers {
     margin-top: 92px;
@@ -29,6 +31,7 @@
 .technology.body__white,
 .releases.body__white,
 .vtour.body__white,
+.iot.body__white,
 .wtour.body__white,
 .term.body__white,
 .privacy.body__white,
@@ -41,6 +44,7 @@
 .vtour .main,
 .wtour .main,
 .term .main,
+.iot .main,
 .privacy .main,
 .developers .main {
   padding-top: 0;
@@ -51,6 +55,7 @@
 .releases.page_wrap,
 .vtour.page_wrap,
 .term.page_wrap,
+.iot.page_wrap,
 .privacy.page_wrap,
 .wtour.page_wrap,
 .developers.page_wrap,
@@ -58,6 +63,7 @@
 .releases.page_wrap .header_inner,
 .vtour.page_wrap .header_inner,
 .term.page_wrap .header_inner,
+.iot.page_wrap .header_inner,
 .privacy.page_wrap .header_inner,
 .wtour.page_wrap .header_inner,
 .developers.page_wrap .header_inner {
@@ -68,6 +74,7 @@
 .releases footer .container-fluid,
 .vtour footer .container-fluid,
 .term footer .container-fluid,
+.iot footer .container-fluid,
 .privacy footer .container-fluid,
 .wtour footer .container-fluid,
 .developers footer .container-fluid {
