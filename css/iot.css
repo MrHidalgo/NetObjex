@@ -63,6 +63,9 @@
     width: 100%;
     padding-left: 0;
   }
+  .protocols__block:last-child {
+    margin-top: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .protocols__block {
@@ -85,6 +88,12 @@
   font-size: 24px;
   font-family: "proxima_novaextrabold", Arial, sans-serif;
 }
+@media screen and (max-width: 767px) {
+  .protocols__block-title {
+    font-size: 22px;
+  }
+}
+
 .protocols__block-line {
   width: 49px;
   height: 4px;
@@ -126,7 +135,6 @@
     width: calc(100% - 145px);
   }
 }
-.protocols {}
 /* end protocols */
 
 
