@@ -338,12 +338,16 @@ $(function () {
     ]
   });
 });
-  
-  	      
-	
 
- 
-		
-		
+$("[process-btn-js ]").on("click", function(e) {
+  e.preventDefault();
 
+  var elem = $(e.target),
+    elemAttr = elem.attr("data-btn");
 
+  $("[process-btn-js ]").removeClass("is-active");
+  elem.addClass("is-active");
+
+  $(".process__body").removeClass("is-active");
+  $(".process__body[data-body='" + elemAttr + "']").addClass("is-active");
+});
