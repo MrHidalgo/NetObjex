@@ -5,6 +5,75 @@
 
 
 /* main */
+.ai .main {
+  padding-top: 112px;
+  padding-bottom: 127px;
+  background-color: #f5f5f5;
+}
+@media screen and (max-width: 767px) {
+  .ai .main {
+    padding-top: 56px;
+    padding-bottom: 63px;
+  }
+}
+.ai .main .c-grid {
+  z-index: 1;
+  position: relative;
+}
+.ai .main__title {
+  text-align: left;
+}
+.ai .main__subtitle {
+  margin: 0;
+  padding-bottom: 38px;
+  font-size: 24px;
+}
+.ai .main__line {
+  width: 67px;
+  height: 3px;
+  background-color: #0155bb;
+}
+.ai .main__text {
+  padding-top: 63px;
+  line-height: 1.5;
+  font-size: 18px;
+}
+.ai .main__row {
+  display: flex;
+}
+.ai .main__row-left {
+  width: calc(100% - 590px);
+}
+.ai .main__row-right {
+  width: 590px;
+}
+.ai .main__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.ai .main__bg {
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.ai .main__bg-left,
+.ai .main__bg-right {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+.ai .main__bg-left {
+  left: 0;
+  width: 50%;
+}
+.ai .main__bg-right {
+  right: 0;
+  width: 50%;
+}
 .ai .main {}
 /* end main */
 
@@ -79,6 +148,11 @@
   color: #fff;
   font-size: 16px;
 }
+@media screen and (max-width: 767px) {
+  .ai .implementation__text {
+    font-size: 14px;
+  }
+}
 .ai .implementation__text--p {
   padding-bottom: 40px;
 }
@@ -106,6 +180,11 @@
   color: #fff;
   font-size: 16px;
   font-family: "proxima_novabold", sans-serif;
+}
+@media screen and (max-width: 767px) {
+  .ai .implementation__btn {
+    font-size: 14px;
+  }
 }
 .ai .implementation__img {
   display: block;
@@ -222,6 +301,11 @@
   padding-bottom: 40px;
   font-size: 18px;
   font-family: "proxima_novabold", Arial, sans-serif;
+}
+@media screen and (max-width: 767px) {
+  .ai .publications__block-title {
+    font-size: 16px;
+  }
 }
 .ai .publications__block-text {
   line-height: 1;
