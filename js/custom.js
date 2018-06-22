@@ -60,6 +60,28 @@ jQuery(document).ready(function ($) {
     slidesToScroll: 1
   });
 
+  $('#user_numbers').animateNumber(
+            { 
+              number: 2000000,   
+              easing: 'easeInQuad', 
+            } ,
+            2000
+    );
+  $('#oem_numbers').animateNumber(
+            { 
+              number: 7,   
+              easing: 'easeInQuad', 
+            } ,
+            1000
+    );
+   $('#sector_numbers').animateNumber(
+            { 
+              number: 5,   
+              easing: 'easeInQuad', 
+            } ,
+            1000
+    );
+
   $('.user_slide').click(function () {
     if (!$(this).hasClass('active')) {
       $('.user_slide').removeClass('active');
@@ -68,6 +90,16 @@ jQuery(document).ready(function ($) {
       var mySlide = $(this).addClass('active').detach();
       mySlide.prependTo('.slider_wrap');
       $('.user_slide').fadeIn(100);
+    }
+
+  });
+
+  $('.s_tab').click(function () {
+    if (!$(this).hasClass('active')) {
+      $('.s_slide').hide();
+      $('.s_tab').removeClass('active')
+      $(this).next('.s_slide').fadeIn();
+      $(this).addClass('active');
     }
 
   });

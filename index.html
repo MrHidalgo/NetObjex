@@ -50,7 +50,7 @@
             <span class="icon icon-bar"></span>
             <span class="icon icon-bar"></span>
           </button>
-          <a href="#" class="navbar-brand"><img src="images/logo.png"/></a>
+          <a href="index.html" class="navbar-brand"><img src="images/logo.png"/></a>
         </div>
 
         <div class="collapse navbar-collapse">
@@ -72,6 +72,8 @@
     <div class="video_block">
       <video autoplay muted loop id="headervideo">
         <source src="videos/netobjex_sparkle.mp4" type="video/mp4">
+        <source src="videos/netobjex_sparkle.ogg" type="video/ogg">
+        <source src="videos/netobjex_sparkle.webm" type="video/webm">
       </video>
     </div>
     <div class="inner">
@@ -84,9 +86,9 @@
           </div>
 
           <div class="full">
-            <div class="banner_numberbox"><span class="num">7</span><span class="detail">OEM <br><sub>licenses</sub></span></div>
-            <div class="banner_numberbox"><span class="num">2<small>m</small></span><span class="detail">user <br><sub>base</sub></span></div>
-            <div class="banner_numberbox last"><span class="num">5</span><span class="detail">sectors <br><sub>use our technology</sub></span></div>
+            <div class="banner_numberbox"><span class="num" id="oem_numbers">7</span><span class="detail">OEM <br><sub>licenses</sub></span></div>
+            <div class="banner_numberbox"><span class="num" id="user_numbers"><small>m</small></span><span class="detail">user <br><sub>base</sub></span></div>
+            <div class="banner_numberbox last"><span class="num" id="sector_numbers">5</span><span class="detail">sectors <br><sub>use our technology</sub></span></div>
           </div>
 
           <a href="#requestdemo" class="base_btn demo_btn wow bounceInLeft smoothScroll" data-wow-delay="1.6s">REQUEST A DEMO</a>
@@ -680,9 +682,9 @@
           <div class="col-md-3 col-sm-6">
             <div class="foot_title"><i>which</i> <span class="sub">services we offer</span></div>
             <ul class="f_links">
-              <li><a href="#">Artificial Intelligence</a></li>
-              <li><a href="#">BlockChain</a></li>
-              <li><a href="#">Internet of Things</a></li>
+              <li><a href="ai_services.html">Artificial Intelligence</a></li>
+              <li><a href="blockchain_services.html">BlockChain</a></li>
+              <li><a href="iot_services.html">Internet of Things</a></li>
             </ul>
           </div>
           <div class="col-md-3 col-sm-6">
@@ -717,6 +719,7 @@
 <script src="js/wow.min.js"></script>
 <script src="js/responsiveslides.min.js"></script>
 <script src="js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
 <script src="js/custom.js"></script>
 
 <div class="modal fade " id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
