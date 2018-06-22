@@ -60,27 +60,29 @@ jQuery(document).ready(function ($) {
     slidesToScroll: 1
   });
 
-  $('#user_numbers').animateNumber(
-            { 
-              number: 2000000,   
-              easing: 'easeInQuad', 
-            } ,
-            2000
+  if ($('#user_numbers').length > 0) {
+    $('#user_numbers').animateNumber(
+      {
+        number: 2000000,
+        easing: 'easeInQuad',
+      },
+      2000
     );
-  $('#oem_numbers').animateNumber(
-            { 
-              number: 7,   
-              easing: 'easeInQuad', 
-            } ,
-            1000
+    $('#oem_numbers').animateNumber(
+      {
+        number: 7,
+        easing: 'easeInQuad',
+      },
+      1000
     );
-   $('#sector_numbers').animateNumber(
-            { 
-              number: 5,   
-              easing: 'easeInQuad', 
-            } ,
-            1000
+    $('#sector_numbers').animateNumber(
+      {
+        number: 5,
+        easing: 'easeInQuad',
+      },
+      1000
     );
+  }
 
   $('.user_slide').click(function () {
     if (!$(this).hasClass('active')) {
@@ -256,7 +258,7 @@ $(function () {
 });
 
 $(function () {
-  $("[tabs-link-js]").on("click", function(e) {
+  $("[tabs-link-js]").on("click", function (e) {
     e.preventDefault();
 
     var elem = $(this),
@@ -270,7 +272,7 @@ $(function () {
   });
 
   function tourBtn(btnName) {
-    $("[" + btnName + "]").on("click", function(e) {
+    $("[" + btnName + "]").on("click", function (e) {
       e.preventDefault();
 
       var elem = $(this);
@@ -278,7 +280,7 @@ $(function () {
       $("[" + btnName + "]").removeClass("is-active");
       elem.addClass("is-active");
 
-      if(btnName === "vblock-js") {
+      if (btnName === "vblock-js") {
         var elemVideoIdx = elem.attr("data-block"),
           elemTitle = elem.find(".main__block-text").text();
 
@@ -289,7 +291,7 @@ $(function () {
         $(".main__box-wrapper[data-wrap='" + elemVideoIdx + "']").addClass("is-active");
       }
 
-      if(btnName === "wblock-js") {
+      if (btnName === "wblock-js") {
         var elemWebIdx = elem.attr("data-block");
 
         $(".main__box-wrapper").removeClass("is-active");

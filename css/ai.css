@@ -1,0 +1,239 @@
+/*
+  IOT
+  ============
+  ============ */
+
+
+/* main */
+.ai .main {}
+/* end main */
+
+
+/* process */
+.ai .process {}
+/* end process */
+
+
+/* implementation */
+.ai .implementation {
+  padding-top: 88px;
+  padding-bottom: 122px;
+  background-color: #0155bb;
+}
+@media screen and (max-width: 767px) {
+  .ai .implementation {
+    padding-top: 44px;
+    padding-bottom: 61px;
+  }
+}
+.ai .implementation__title {
+  padding-bottom: 80px;
+  color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .ai .implementation__title {
+    padding-bottom: 40px;
+  }
+}
+.ai .implementation__row {
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 320px) {
+  .ai .implementation__row {
+    flex-direction: column;
+  }
+  .ai .implementation__row-left {
+    margin-bottom: 40px;
+  }
+  .ai .implementation__row-left,
+  .ai .implementation__row-right {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .ai .implementation__row {
+    flex-direction: row;
+  }
+  .ai .implementation__row-left {
+    width: calc(100% - 350px);
+    padding-right: 50px;
+    margin-bottom: 0;
+  }
+  .ai .implementation__row-right {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ai .implementation__row-left {
+    width: calc(100% - 477px);
+    padding-right: 70px;
+  }
+  .ai .implementation__row-right {
+    width: 477px;
+  }
+}
+.ai .implementation__text {
+  margin: 0;
+  line-height: 1.6;
+  color: #fff;
+  font-size: 16px;
+}
+.ai .implementation__text--p {
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+  .ai .implementation__text--p {
+    padding-bottom: 20px;
+  }
+}
+.ai .implementation__text--m {
+  margin-bottom: 65px;
+}
+@media screen and (max-width: 767px) {
+  .ai .implementation__text--m {
+    margin-bottom: 32px;
+  }
+}
+.ai .implementation__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 178px;
+  height: 50px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  font-family: "proxima_novabold", sans-serif;
+}
+.ai .implementation__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.ai .implementation {}
+/* end implementation */
+
+
+/* publications */
+.ai .publications {
+  padding-top: 91px;
+  padding-bottom: 104px;
+  background-color: #f5f5f5;
+}
+@media screen and (max-width: 767px) {
+  .ai .publications {
+    padding-top: 45px;
+    padding-bottom: 52px;
+  }
+}
+.ai .publications__title {
+  padding-bottom: 72px;
+}
+@media screen and (max-width: 767px) {
+  .ai .publications__title {
+    padding-bottom: 36px;
+  }
+}
+.ai .publications__row {
+  display: flex;
+}
+@media screen and (min-width: 320px) {
+  .ai .publications__row {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 992px) {
+  .ai .publications__row {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+.ai .publications__block {
+  width: 306px;
+  min-height: 343px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.12);
+}
+.ai .publications__block-0 .publications__block-image {
+  background-image: url(../images/img-banner-0__releases.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.ai .publications__block-1 .publications__block-image {
+  background-image: url(../images/img-banner-1__releases.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.ai .publications__block-2 .publications__block-image {
+  background-image: url(../images/img-banner-2__releases.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.ai .publications__block-3 .publications__block-image {
+  background-image: url(../images/img-banner-3__releases.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (min-width: 320px) {
+  .ai .publications__block {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .ai .publications__block {
+    width: 250px;
+  }
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 992px) {
+  .ai .publications__block {
+    width: 230px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ai .publications__block {
+    width: 276px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .ai .publications__block {
+    width: 306px;
+  }
+}
+.ai .publications__block-image {
+  overflow: hidden;
+  height: 163px;
+  margin-bottom: 30px;
+}
+.ai .publications__block-title {
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 40px;
+  font-size: 18px;
+  font-family: "proxima_novabold", Arial, sans-serif;
+}
+.ai .publications__block-text {
+  line-height: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #9b8f8f;
+  font-family: "proxima_novabold", Arial, sans-serif;
+}
+.ai .publications {}
+/* end publications */
+
+
+/*
+  end IOT
+  ============ */

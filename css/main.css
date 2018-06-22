@@ -11,6 +11,7 @@
   .term,
   .iot,
   .privacy,
+  .ai,
   .developers {
     margin-top: 80px;
   }
@@ -23,6 +24,7 @@
   .term,
   .iot,
   .privacy,
+  .ai,
   .developers {
     margin-top: 92px;
   }
@@ -35,6 +37,7 @@
 .wtour.body__white,
 .term.body__white,
 .privacy.body__white,
+.ai.body__white,
 .developers.body__white {
   background-color: #fff;
 }
@@ -46,6 +49,7 @@
 .term .main,
 .iot .main,
 .privacy .main,
+.ai .main,
 .developers .main {
   padding-top: 0;
   padding-bottom: 0;
@@ -57,6 +61,7 @@
 .term.page_wrap,
 .iot.page_wrap,
 .privacy.page_wrap,
+.ai.page_wrap,
 .wtour.page_wrap,
 .developers.page_wrap,
 .technology.page_wrap .header_inner,
@@ -65,6 +70,7 @@
 .term.page_wrap .header_inner,
 .iot.page_wrap .header_inner,
 .privacy.page_wrap .header_inner,
+.ai.page_wrap .header_inner,
 .wtour.page_wrap .header_inner,
 .developers.page_wrap .header_inner {
   max-width: 100%;
@@ -76,6 +82,7 @@
 .term footer .container-fluid,
 .iot footer .container-fluid,
 .privacy footer .container-fluid,
+.ai footer .container-fluid,
 .wtour footer .container-fluid,
 .developers footer .container-fluid {
   max-width: 1360px;
