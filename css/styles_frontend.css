@@ -248,10 +248,57 @@ h2 {
   .custom-navbar .nav li .nav-drop ul li a {
     padding-left: 38px;
     font-size: 15px;
-    font-family: "proxima_nova_rgregular";
+    font-family: "proxima_nova_rgregular", sans-serif;
   }
   .custom-navbar .nav li:hover .nav-drop {
     display: block;
+  }
+  .nav-drop__wrap {
+    display: flex;
+    padding: 11px;
+  }
+  .nav-drop__left {
+    width: 207px;
+    margin-right: 15px;
+  }
+  .nav-drop__right {
+    margin-left: 15px;
+    width: 207px;
+  }
+  .nav-drop__right ul li a {
+    padding-left: 0 !important;
+  }
+  .nav-drop__box {
+    width: 100%;
+    height: 100%;
+    padding-top: 19px;
+    background-color: #1a1919;
+  }
+  .nav-drop__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 174px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    padding-left: 0 !important;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 204, 0);
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "proxima_novabold", sans-serif !important;
+  }
+  .nav-drop__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 19px;
   }
 }
 
