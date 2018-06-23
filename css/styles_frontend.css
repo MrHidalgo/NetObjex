@@ -3736,6 +3736,7 @@ ul.tick_list li {
 }
 
 .news__card-title {
+  min-height: 75px;
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 30px;
