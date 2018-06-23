@@ -795,7 +795,6 @@ h1.site_title {
 .page_wrap .header_inner {
   max-width: 1500px;
   width: 100%;
-  min-height: 103px;
   /*padding-top: 11px;*/
   background: #000 url('../images/header_tile.png') repeat;
   border-bottom: 1px solid #4d4d65;
@@ -804,6 +803,7 @@ h1.site_title {
 @media screen and (min-width: 768px) {
   .page_wrap .header_inner {
     height: 103px;
+    min-height: 103px;
   }
 }
 
