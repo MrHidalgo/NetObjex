@@ -362,16 +362,14 @@ $(function () {
   });
 
 
-  $(".nav-drop a").on("click", function(e) {
-    e.preventDefault();
+  $(".navbar-toggle").on("click", function(e) {
+    var elem = $(this);
 
-    var linkHref = $(this).attr("href");
-
-    if($(window).width() < 576) {
-      if(linkHref === "#") {
-        $(".navbar-collapse").collapse('hide');
-        $(".nav-drop").slideUp();
-      }
+    if(!elem.hasClass("is-show")) {
+      elem.addClass("is-show");
+    } else {
+      $(".nav-drop").slideUp();
+      elem.removeClass("is-show");
     }
   });
 });
