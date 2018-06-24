@@ -692,8 +692,9 @@ footer span {
 }
 
 .navbar-brand {
-  float: left;
-  height: 50px;
+  display: block;
+  float: none !important;
+  height: auto !important;
   padding: 3px 15px 0;
   font-size: 18px;
   line-height: 20px;
@@ -703,10 +704,9 @@ footer span {
   .navbar-brand {
     padding-top: 10px !important;
   }
-  @media screen and (min-width: 768px) {
-  }
+}
+@media screen and (min-width: 768px) {
   .navbar-brand {
-    height: auto;
     padding: 0 15px 0;
   }
 }
@@ -3307,7 +3307,7 @@ ul.tick_list li {
 
   .navbar-brand > img {
     width: 107px;
-    margin-top: 7px;
+    /*margin-top: 7px;*/
   }
 
   #partner .box {
