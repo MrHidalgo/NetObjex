@@ -207,9 +207,9 @@ $(function () {
 
 
   // Hide Mobile Menu After Clicking On a link
-  $('.navbar-collapse a').click(function () {
-    $(".navbar-collapse").collapse('hide');
-  });
+  // $('.navbar-collapse a').not("[dropdown-js]").click(function () {
+  //   $(".navbar-collapse").collapse('hide');
+  // });
 
   /* Parallax section
    -----------------------------------------------*/
@@ -350,5 +350,28 @@ $(function () {
 
     $(".process__body").removeClass("is-active");
     $(".process__body[data-body='" + elemAttr + "']").addClass("is-active");
+  });
+
+
+  $("[dropdown-js]").on("click", function(e) {
+    e.preventDefault();
+
+    if($(window).width() < 576) {
+      $(this).siblings(".nav-drop").slideToggle();
+    }
+  });
+
+
+  $(".nav-drop a").on("click", function(e) {
+    e.preventDefault();
+
+    var linkHref = $(this).attr("href");
+
+    if($(window).width() < 576) {
+      if(linkHref === "#") {
+        $(".navbar-collapse").collapse('hide');
+        $(".nav-drop").slideUp();
+      }
+    }
   });
 });
