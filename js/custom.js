@@ -357,7 +357,12 @@ $(function () {
     e.preventDefault();
 
     if($(window).width() < 576) {
-      $(this).siblings(".nav-drop").slideToggle();
+      if($(this).siblings(".nav-drop").hasClass("is-open")) {
+        $(this).siblings(".nav-drop").slideUp().removeClass("is-open");
+      } else {
+        $(".nav-drop").slideUp().removeClass("is-open");
+        $(this).siblings(".nav-drop").slideDown().addClass("is-open");
+      }
     }
   });
 
